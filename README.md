@@ -2,9 +2,18 @@
 
 ### Tools used in the project:
 
+FastApi (if it is a recommendation system using my old e-commerce websites)
 Docker
+Docker Compose
 Redis
 Celery
+Flower
+Beat
+MLFlow
+database: mongodb
+Kubernetes (do I need it)
+
+all of the above will be used in a Distributed system
 
 ---
 
@@ -12,10 +21,3 @@ Message Broker
 In-memory Key-Value Store & Message Broker
 Beat will schedule scrapers - Task Scheduler
 Elasticsearch
-
-### Project Draft Idea
-
-Distributed Image Processing System
-Idea: Upload images, process them (resize, grayscale, etc.), and return the processed image.
-Tools: Celery + RabbitMQ + Redis + Flower
-Why? Celery will distribute tasks across workers, RabbitMQ will queue requests, Redis will cache processed images, and Flower will help monitor workers.
