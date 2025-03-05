@@ -45,6 +45,15 @@ dev environment, staging environment, and production environment
 
 Elasticsearch (do I need it)
 
+Helm:
+How They Work Together
+Kubernetes provides the underlying infrastructure to run containers.
+Helm packages the application (e.g., frontend, backend, database) into a Chart and deploys it to Kubernetes.
+Helm uses Kubernetes manifests (e.g., Deployments, Services) under the hood but adds a layer of abstraction for easier management.
+Kubernetes is the foundation for running containerized applications.
+Helm is a tool built on top of Kubernetes to simplify application deployment and management.
+Think of Kubernetes as the engine that runs your applications and Helm as the driver that makes it easier to operate the engine. Together, they provide a powerful platform for deploying and managing modern applications.
+
 OpenTelemetry for Better Tracing
 To enhance observability, we'll integrate OpenTelemetry with our distributed MLOps system. This will allow us to trace requests across services (FastAPI, Celery, and RabbitMQ) and monitor latency, errors, and bottlenecks.
 
@@ -60,3 +69,19 @@ Message Broker
 In-memory Key-Value Store & Message Broker
 Beat will schedule scrapers - Task Scheduler
 Elasticsearch
+
+### potential project:
+
+book recommender system
+
+movie recommender system
+
+and my ecommerce website
+
+or all of them (at least for model development and then decide which one to continue)
+
+Or:
+we use the breast cancer project to apply all the MLOPs principle while it is easier to collect data and do the inference and there is no for historical data. but the goal is to have MLOPs applied.
+
+and create three projects with recommendation:
+book, movie and other goods (explore using LLMs)
